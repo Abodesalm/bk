@@ -5,8 +5,9 @@ import { FaBook } from 'react-icons/fa6';
 
 export default function Subject(cad: {
   title: string;
-  books: Array<{ h2: string; url: string }>;
+  books: Array<{ h2: string }>;
   bool: boolean;
+  path;
 }) {
   return (
     <div
@@ -24,9 +25,10 @@ export default function Subject(cad: {
               key={e.h2}
               className="w-full flex flex-row justify-between items-center mt-3"
             >
-              <h3 className="w-fit">{e.h2}</h3>
+              <h3 className="w-fit">{e.h2.replaceAll('_', ' ')}</h3>
               <Link
-                href={e.url}
+                href={`${cad.path}${e.h2}.pdf`}
+                target="_blank"
                 className="bg-success rounded-lg p-1 hover:bg-success/80 transition-colors text-white flex justify-center items-center"
               >
                 <Download className="text-[12px]" />

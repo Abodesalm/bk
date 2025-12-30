@@ -25,7 +25,7 @@ export default function Sec4({
     .find((item) => item.id === ch1)
     ?.content.find((sub) => sub?.id === ch2)
     ?.content.find((sub2) => sub2?.id === ch3)?.content;
-  console.log((data as any)?.[0]?.title);
+
   useEffect(() => {
     if ((data as any)?.[0]?.title) {
       setBool(true);
@@ -36,7 +36,6 @@ export default function Sec4({
     if (!ch3) {
       setBool(true);
     }
-    console.log('books: ', bk);
   }, [ch3, ch4]);
   return (
     <div

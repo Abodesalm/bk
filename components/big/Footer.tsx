@@ -22,11 +22,19 @@ export default function Footer() {
       </Link>
 
       <Link
-        href={`https://sabir511.com/`}
+        href={`https://mahmoud-walid1.github.io/Exam_website/`}
         className="hover:text-accennt transition-colors flex flex-row gap-2 w-fit"
         target="_blank"
       >
-        ملازم المركزي ونافس وجميع الاختبارات المحاكية لجميع المواد مع الإجابة{' '}
+        ملازم المركزي ونافس وجميع الاختبارات المحاكية لجميع المواد مع الإجابة
+        <ExternalLink className="size-[16px]" />
+      </Link>
+      <Link
+        href={`https://t.me/sabir51120302030`}
+        className="hover:text-accennt transition-colors flex flex-row gap-2 w-fit"
+        target="_blank"
+      >
+        أكبر قناة تعليمية للمعلمين و المعلمات
         <ExternalLink className="size-[16px]" />
       </Link>
     </div>

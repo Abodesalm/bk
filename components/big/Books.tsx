@@ -11,7 +11,7 @@ import { format } from '@/lib/utils';
 
 export default function Books({ bool, ch1, ch2, ch3, ch4 }) {
   const path = format(ch1, ch2, ch3, ch4);
-  const the_path = `@/public/books/${path}`;
+  const the_path = `/books/${path}/`;
   let subjects = the_data[ch1 - 1]?.content[ch2 - 1]?.content[ch3 - 1]?.content;
 
   if (ch4) {
@@ -25,7 +25,13 @@ export default function Books({ bool, ch1, ch2, ch3, ch4 }) {
     >
       {subjects?.map((e) => {
         return (
-          <Subject key={e.title} title={e.title} books={e.books} bool={bool} />
+          <Subject
+            key={e.title}
+            title={e.title}
+            books={e.books}
+            bool={bool}
+            path={the_path}
+          />
         );
       })}
     </div>
