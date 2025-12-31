@@ -26,13 +26,14 @@ export default function Subject(cad: {
               className="w-full flex flex-row justify-between items-center mt-3"
             >
               <h3 className="w-fit">{e.h2.replaceAll('_', ' ')}</h3>
-              <Link
+              <a
                 href={`${cad.path}${e.h2}.pdf`}
-                target="_blank"
-                className="bg-success rounded-lg p-1 hover:bg-success/80 transition-colors text-white flex justify-center items-center"
+                download
+                /*                 target="_blank"
+                 */ className="bg-success rounded-lg p-1 hover:bg-success/80 transition-colors text-white flex justify-center items-center"
               >
                 <Download className="text-[12px]" />
-              </Link>
+              </a>
             </div>
             {index === cad.books.length - 1 ? null : (
               <Separator className="mt-3 opacity-30" />
