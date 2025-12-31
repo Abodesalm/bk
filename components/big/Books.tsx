@@ -11,7 +11,7 @@ import { format } from '@/lib/utils';
 
 export default function Books({ bool, ch1, ch2, ch3, ch4 }) {
   const path = format(ch1, ch2, ch3, ch4);
-  const the_path = `/books/${path}/`;
+  const the_path = `https://sandybrown-trout-625992.hostingersite.com/books/${path}/`;
   let subjects = the_data[ch1 - 1]?.content[ch2 - 1]?.content[ch3 - 1]?.content;
 
   if (ch4) {
