@@ -23,7 +23,7 @@ export default function Subject(cad: {
           <>
             <div
               key={e.h2}
-              className="w-full flex flex-row justify-between items-center mt-3"
+              className="w-full flex flex-row justify-between items-center mt-3 gap-2"
             >
               <h3 className="w-fit">{e.h2.replaceAll('_', ' ')}</h3>
               <a
