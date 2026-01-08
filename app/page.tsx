@@ -34,7 +34,7 @@ export default function Page() {
               width={200}
               height={200}
               alt="logo"
-              className="h-auto w-[60px]"
+              className="h-auto md:w-[60px]"
             />
           </Link>
 
@@ -44,7 +44,7 @@ export default function Page() {
               width={200}
               height={200}
               alt="logo"
-              className="h-auto w-[60px]"
+              className="h-auto md:w-[60px]"
             />
           </Link>
 

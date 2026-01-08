@@ -19,7 +19,7 @@ export default function Page() {
   const [books, setBooks] = useState(false);
 
   return (
-    <main>
+    <main className="w-full">
       <h1 className="text-center text-white text-4xl md:text-3xl font-bold my-12">
         الكتب الدراسية 1447
       </h1>

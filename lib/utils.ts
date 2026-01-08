@@ -19,3 +19,8 @@ export const coloring = (num) => {
   else if (num < 70 && num >= 60) return 'yellow';
   else if (num < 60) return 'red';
 };
+
+export function parseTimeToSeconds(time: string): number {
+  const [minutes, seconds] = time.split(':').map(Number);
+  return minutes * 60 + seconds;
+}
