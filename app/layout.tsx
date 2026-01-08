@@ -7,6 +7,9 @@ import type { Metadata } from 'next';
 
 import process from 'process';
 import { Toaster } from '@/components/ui/sonner';
+import BackgroundDoodles from '@/components/big/BackgroundDoodles';
+import Footer from '@/components/big/Footer';
+import Navbar from '@/components/big/Navbar';
 
 //env.config({ path: "./config.env" });
 
@@ -32,33 +35,14 @@ export default async function Layout({
       lang={`ar`}
       dir="rtl"
       suppressHydrationWarning
-      className={notoArabic.variable}
+      className={`${notoArabic.variable} antialiased `}
     >
-      <body>
-        {/* <Providers> */}
-        <div className="min-h-screen relative">
-          {/* الخلفية الثابتة */}
-          <div className="fixed inset-0 z-0">
-            {/* الخلفية البيضاء */}
-            <div className="absolute inset-0 bg-[#f5f9ff]"></div>
-
-            {/* الجزء المنحني العلوي مع التدرج */}
-            <div
-              className="absolute top-0 left-0 w-full h-[50vh] min-h-[400px]"
-              style={{
-                background: 'linear-gradient(135deg, #50e0c2 0%, #3b82f6 100%)',
-                clipPath: 'ellipse(100% 70% at 50% 20%)',
-              }}
-            ></div>
-          </div>
-
-          {/* الـ div الفارغ في المنتصف - تستطيع التحكم به */}
-          <div className="relative z-10 flex justify-center min-h-screen mx-[6rem] md:mx-[2rem] mt-[2rem]">
-            {/* هذا الـ div فارغ - أضف محتواك هنا */}
-            {children}
-          </div>
+      <body className="bg-gradient-to-tl from-amber-900 to-yellow-700">
+        <Navbar />
+        <div className="relative z-10 flex justify-center min-h-[60vh]">
+          {children}
         </div>
-        {/* </Providers> */}
+        <Footer />
       </body>
     </html>
   );

@@ -11,3 +11,11 @@ export function format(...ch) {
   }
   return ch.join('/');
 }
+
+export const coloring = (num) => {
+  if (num === 100) return 'green';
+  else if (num < 100 && num >= 85) return 'green';
+  else if (num < 85 && num >= 70) return 'yellow';
+  else if (num < 70 && num >= 60) return 'yellow';
+  else if (num < 60) return 'red';
+};

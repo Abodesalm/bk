@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <div className="w-full min-h-[200px] mt-8 rounded-t-2xl py-6 px-8 font-[600] bg-white drop-shadow-md flex flex-col gap-3 text-lg md:text-[12px]">
+    <div className="w-full min-h-[200px] rounded-t-2xl py-6 px-8 font-[600] bg-newbg drop-shadow-md flex flex-col gap-3 text-lg md:text-[12px]">
       <Link
         href={`https://sabir5-1-1.com/`}
         className="hover:text-accennt transition-colors flex flex-row gap-2 w-fit"

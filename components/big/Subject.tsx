@@ -11,7 +11,7 @@ export default function Subject(cad: {
 }) {
   return (
     <div
-      className={` ${cad.bool ? '' : 'hidden'} bg-white rounded-xl drop-shadow-lg w-[30%] min-h-[100px] py-6 px-8 md:w-full flex flex-col justify-start items-start`}
+      className={` ${cad.bool ? '' : 'hidden'} bg-newbg rounded-xl drop-shadow-lg w-[30%] min-h-[100px] py-6 px-8 md:w-full flex flex-col justify-start items-start`}
     >
       <h2 className="text-xl text-accennt font-bold w-full flex flex-row justify-start items-center gap-3">
         <FaBook className="text-[20px]" /> {cad.title}
@@ -29,8 +29,8 @@ export default function Subject(cad: {
               <a
                 href={`${cad.path}${e.h2}.pdf`}
                 download
-                /*                 target="_blank"
-                 */ className="bg-success rounded-lg p-1 hover:bg-success/80 transition-colors text-white flex justify-center items-center"
+                /*target="_blank"*/
+                className="bg-gradient-to-tl from-success to-lime-500 rounded-lg p-1 hover:bg-gradient-to-br transition-all text-white flex justify-center items-center"
               >
                 <Download className="text-[12px]" />
               </a>

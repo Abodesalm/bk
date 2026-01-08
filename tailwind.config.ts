@@ -39,6 +39,7 @@ const config = {
         lightdark: '#444746',
         limey: '#50e0c2',
         accennt: '#4a69bd',
+        newbg: '#fefef2',
         success: '#198754',
         danger: '#dc3545',
         prime: '#0d6efd',

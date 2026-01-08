@@ -18,7 +18,7 @@ export default function Sec1({
       className={`w-full flex flex-col justify-center items-center gap-5 transition-all duration-150`}
     >
       <div className="flex flex-row gap-4 justify-center items-center">
-        <span className="w-[30px] h-[30px] flex justify-center items-center text-md font-bold rounded-full bg-green-600 text-white m-1">
+        <span className="w-[30px] h-[30px] flex justify-center items-center text-md font-bold rounded-full bg-gradient-to-tl from-accennt to-cyan-500 text-white m-1">
           {number}
         </span>
         <h1 className="text-xl font-bold">{title}</h1>
