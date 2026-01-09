@@ -19,6 +19,8 @@ interface VisitorStats {
   };
 }
 
+let i = 0;
+
 export default function Stats() {
   const [stats, setStats] = useState<VisitorStats | null>(null);
   const [loading, setLoading] = useState(true);
