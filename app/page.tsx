@@ -8,14 +8,22 @@ import Link from 'next/link';
 export default function Page() {
   return (
     <div className="w-full">
-      <main className="w-full h-[80vh] imgbg">
-        <div className="w-[40%] md:w-full h-fit bg-newbg rounded-3xl mt-24 py-16 px-8 md:px-6 md:py-12 drop-shadow-xl">
-          <h1 className="text-5xl md:text-3xl font-bold text-black">
-            مرحباً بك في مكتبة المعلمين
+      <main className="w-full h-[550px] md:h-[80vh] imgbg flex-center text-center">
+        <div className="w-[40%] md:w-full h-fit rounded-3xl mb-40 py-16 px-8 md:px-6 md:py-12 drop-shadow-xl flex flex-col items-center gap-2">
+          <Image
+            src={logo1}
+            alt="logo"
+            width={200}
+            height={200}
+            className="w-[200px] scale-[200%] h-auto md:w-[160px]"
+          />
+          <h1 className="text-3xl md:text-2xl font-bold text-black">
+            مرحباً بكم في مكتبة المعلمين
           </h1>
-          <p className="text-black mt-12 md:mt-6 text-lg">
-            اكتشف مجموعة واسعة من الكتب الدراسية والاختبارات التفاعلية لتعزيز
-            تعلمك بأفضل الطرق.
+          <p className="text-white drop-shadow-md mt-2 md:mt-6 text-2xl/10 md:text-xl/10">
+            هنا يبدأ الإبداع .. و يزدهر التعليم
+            <br />
+            كل ما تحتاجه للتعليم بين يديك !
           </p>
         </div>
       </main>

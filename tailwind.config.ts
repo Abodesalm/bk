@@ -40,6 +40,7 @@ const config = {
         limey: '#50e0c2',
         accennt: '#4a69bd',
         newbg: '#fefef2',
+        newda: '#c6871b',
         success: '#198754',
         danger: '#dc3545',
         prime: '#0d6efd',

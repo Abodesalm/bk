@@ -37,7 +37,7 @@ export default async function Layout({
       suppressHydrationWarning
       className={`${notoArabic.variable} antialiased `}
     >
-      <body className="bg-gradient-to-tl from-amber-900 to-yellow-700">
+      <body className="bg-newda">
         <Navbar />
         <div className="relative z-10 flex justify-center min-h-[60vh]">
           {children}

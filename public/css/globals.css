@@ -435,7 +435,7 @@ main {
 }
 
 .imgbg {
-  background-image: url("./../bg-3.jpg");
+  background-image: url("./../bgg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

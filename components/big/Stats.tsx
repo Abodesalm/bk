@@ -67,7 +67,7 @@ export default function Stats() {
       <Card className="w-[320px] h-[200px] bg-white border-0 drop-shadow-lg">
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
           <CardTitle className="text-xl font-medium">
-            الطلاب المستفيدين
+            الزوار المستفيدين
           </CardTitle>
           <Users className="h-8 w-8 text-black" />
         </CardHeader>
