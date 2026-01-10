@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <div className="w-full">
       <main className="w-full h-[550px] md:h-[80vh] imgbg flex-center text-center">
-        <div className="w-[40%] md:w-full h-fit rounded-3xl mb-40 py-16 px-8 md:px-6 md:py-12 drop-shadow-xl flex flex-col items-center gap-2">
+        <div className="w-[40%] md:w-full h-fit rounded-3xl mab-40 py-16 px-8 md:px-6 md:py-12 drop-shadow-xl flex flex-col items-center gap-2">
           <Image
             src={logo1}
             alt="logo"
@@ -21,9 +21,10 @@ export default function Page() {
             مرحباً بكم في مكتبة المعلمين
           </h1>
           <p className="text-white drop-shadow-md mt-2 md:mt-6 text-2xl/10 md:text-xl/10">
-            هنا يبدأ الإبداع .. و يزدهر التعليم
-            <br />
-            كل ما تحتاجه للتعليم بين يديك !
+            لأن التعليم رسالة ... نحن نوفر أدواتها
+          </p>
+          <p className="text-black bg-newbg/90 p-2 rounded-lg mt-2 md:mt-6 text-2xl/10 md:text-xl/10">
+            طريقك للتفوق يبدأ من هنا
           </p>
         </div>
       </main>

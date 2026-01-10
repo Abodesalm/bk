@@ -11,7 +11,7 @@ import { IoClose } from 'react-icons/io5';
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
   return (
-    <nav className="bg-newbg pad py-4">
+    <nav className="bg-newbg pad py-4 z-20">
       <div className="nav-logo me-12 -mt-2">
         <Image
           src={logo}
